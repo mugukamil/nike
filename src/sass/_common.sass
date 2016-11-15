@@ -27,11 +27,202 @@
 // and create mixin
 // =book
 // 	font-family: "book", Arial, sans-serif
+$red: #c06
+$hover: #999
+
+=gap
+    margin-right: 1%
+
+.text-red
+    color: $red
 
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
-	+font-smoothing
-	
-// common blocks
+    font-family: "Noto Sans"
+    font-size: 16px
+    font-weight: 400
+
+.container-wide
+    max-width: 1400px
+    width: 100%
+    margin: 0 auto
+
+a
+    text-decoration: none
+
+.btn
+    display: inline-block
+    background-color: transparent
+    border: 1px solid $red
+    text-transform: uppercase
+    &.btn-primary
+        color: white
+        background-color: $red 
+        &:hover
+            background-color: $hover
+            border-color: $hover  
+    &.btn-secondary
+        color: $red
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+
+.site-header
+    &__hr
+        border: 0
+        height: 1px
+        background-color: #e5e5e7 
+        margin-top: 0
+    &__top
+        padding-top: 15px
+        margin-bottom: 20px
+    &__slogan
+        width: 15.4285714%
+        color: #424a55
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+        display: inline-block
+        vertical-align: top
+        +gap
+    &__choose
+        display: inline-block
+        vertical-align: top
+        width: 12.7142857%
+        +gap
+        .btn
+            padding: 11px 7%
+    &__hos
+        display: inline-block
+        vertical-align: top
+        width: 10%
+        +gap
+        +clr
+        i
+            +s(icon-clock)
+            float: left
+        p
+            font-size: 14px
+            line-height: 18px
+            color: #424a55
+            margin-left: 25px
+            span
+                font-weight: 700
+    &__contacts
+        display: inline-block
+        vertical-align: top
+        width: 11%
+        i
+            float: left
+            +s(icon-call)
+        p
+            margin-left: 25px
+        a
+            color: #333
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+    &__call
+        width: 13%
+        display: inline-block
+        vertical-align: top
+        +gap
+        .btn
+            padding: 12px 12px
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+            width: 100%
+    &__cart
+        width: 5%
+        display: inline-block
+        vertical-align: top
+        text-align: center
+        p
+            color: #424a55
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+        i
+            +s(icon-cart) 
+            display: inline-block
+    &__middle
+    &__menu
+        background-color: black
+        min-height: 55px  
+    &__logo
+        vertical-align: top
+        display: inline-block
+        width: 14%
+        background-color: $red 
+        padding: 16px 18px
+        a
+            color: white
+            font-size: 22px
+            font-weight: 400
+            line-height: 18px
+            text-transform: uppercase
+    &__submenu
+        display: inline-block
+        vertical-align: top
+        margin-left: 10%
+        margin-top: 15px
+        li
+            display: inline-block
+            & + li
+                margin-left: 15px
+            a
+                color: white
+                font-size: 14px
+                font-weight: 400
+                line-height: 18px
+                text-transform: uppercase
+                &:hover
+                    color: $red
+         
+            
+
+
+
+.search
+    display: inline-block
+    position: relative
+    width: 22%
+    +gap
+    &__input
+        width: 100%
+        display: block
+        padding: 11px 10%
+        color: #424a55
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+        border: 1px solid #424a55
+    &__btn
+        position: absolute
+        display: inline-block
+        +s(icon-search)
+        top: 11px
+        left: 11px
+        background-color: transparent
+
+.main-menu
+    padding: 15px 0
+    margin: 0 auto
+    text-align: center
+    max-width: 880px
+    &__item
+        display: inline-block
+        & + li
+            margin-left: 15px
+        a
+            color: #424a55
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+            text-transform: uppercase
+            &:hover
+                color: $red
+
+.main-slider
+    
+
