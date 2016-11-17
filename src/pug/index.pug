@@ -1,9 +1,17 @@
 extends _layout
 
 block title
-	title Title of template
+    title Главная
+    
+block vars
+    -var page = 'index'
 
 block content
-	.out
-		+icon("octa")
-		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsum maxime, tempora deserunt minima suscipit voluptatem possimus ratione inventore eveniet autem esse accusamus eos quibusdam consequuntur quia officiis eum! Et!
+    include _header
+    include index/_advantages
+    include index/_arrivals
+    include index/_bestsellers
+    include index/_reviews
+    include index/_about
+    include index/_news
+    include _footer

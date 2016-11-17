@@ -9,7 +9,7 @@ gulp.task('pug', function() {
     return gulp.src([
             config.src.pug + '/*.pug', 
             '!' + config.src.pug + '/_*.pug', 
-            '!' + config.src.pug + '/includes/*.pug'])
+            '!' + config.src.pug + '/index/*.pug'])
         .pipe(plumber({errorHandler: notify.onError(function(error){return error.message;})}))
         // .pipe(changed(dest.html, {extension: '.html'}))
         .pipe(pug({pretty: true}))
@@ -21,7 +21,7 @@ gulp.task('pug-all', function() {
     return gulp.src([
         config.src.pug + '/*.pug', 
         '!' + config.src.pug + '/_*.pug', 
-        '!' + config.src.pug + '/includes/*.pug'])
+        '!' + config.src.pug + '/index/*.pug'])
         .pipe(plumber({errorHandler: notify.onError(function(error){return error.message;})}))
         .pipe(pug({pretty: true}))
         .pipe(gulp.dest(config.dest.html));
@@ -29,5 +29,5 @@ gulp.task('pug-all', function() {
 
 gulp.task('pug:watch', function() {
     gulp.watch(config.src.pug + '/**/*.pug', ['pug']);
-    gulp.watch([config.src.pug + '/_*.pug', config.src.pug + '/includes/*.pug'], ['pug-all']);
+    gulp.watch([config.src.pug + '/_*.pug', config.src.pug + '/index/*.pug'], ['pug-all']);
 });

@@ -1,0 +1,18 @@
+  
+.section.arrivals.bg-color
+  .container
+    h1.main-heading
+      span.text-red новые
+      |  поступления
+    .col6.cards
+        - for (var x = 0; x < 6; x++)
+          .card
+            img.card__img(src='img/boots.png', alt='')
+            .card__desc
+              p.card__text Adidas Valley Ransom High With Fur (Dark Navy Red)
+              .card__price
+                s 6.990 руб.
+                br
+                span.text-red 3.990 руб.
+              p.card__eco.text-red Экономия 3.800
+              button.btn.btn-primary Просмотреть

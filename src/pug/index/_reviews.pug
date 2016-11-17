@@ -1,0 +1,55 @@
+.section.reviews.bg-color
+  .container
+    h1.main-heading
+      span.text-red отзывы
+      |  о нас
+    .review
+      .review__meta.reviewer
+        img.reviewer__img(src='img/avatar.jpg', alt='')
+        .reviewer__info
+          .reviewer__top
+            span.text-red Мария иВанова
+            address.reviewer__address город москва
+            time.review__date(datetime='10-11-2016') (10.11.2016)
+            .reviewer__rate
+              ul.reviewer__stars
+                li
+                  i.icon.icon-star
+                li
+                  i.icon.icon-star
+                li
+                  i.icon.icon-star
+              span.text-grey Хороший магазин
+          .reviewer__links
+            ul
+              li
+                i.icon.icon-vk
+                a(href='http://vk.com/id372165874', target='_blank') vk.com/id372165874
+              li
+                i.icon.icon-mail
+                a(href='mailto:maria_ivanova@mail.ru', target='_blank') maria_ivanova@mail.ru
+          .review__product
+            p
+              | Покупала(1) : 
+              img(src='img/review-prod.jpg', alt='')
+              a.text-grey(href='') Converse All Stars II Low Red White
+      .review__text
+        p
+          | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      .review__imgs
+        ul
+          li
+            img(src='img/review-img.jpg', alt='')
+          li
+            img(src='img/review-img.jpg', alt='')
+          li
+      // START .review__footer
+      footer.review__footer
+        a.review__answer(href='') Ответ магазина
+        ul.review__reputation
+          li
+            img(src='img/icon-like.png', alt='')
+          li
+            img(src='img/icon-dislike.png', alt='')
+    .text-center
+      button.btn.btn-primary ВСЕ ОТЗЫВЫ

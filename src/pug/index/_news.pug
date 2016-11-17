@@ -1,0 +1,38 @@
+.section.news.bg-color
+  .container
+    h1.main-heading
+      span.text-red наши
+      |  новости
+    .col4
+      ul.news__list
+        -for (var i = 0; i < 4; i++)
+            li.news__item
+              img(src='img/news.jpg', alt='')
+              h3
+                time(datetime='21-10-2016') 21.10.2016
+                span.text-red ФЕЙК ИЛИ НЕТ? 10 СОВЕТОВ ОТ STREET BEAT
+              hr.news__hr
+              p Рассказываем, как понять, что кроссовки, которые вы выбрали – настоящие.
+              footer.news__footer
+                ul
+                  li.news__likes
+                    button
+                      i.icon.icon-heart
+                      span  721
+                  li.news__comments
+                    button
+                      i.icon.icon-message
+                      span  52
+                  li.news__share.text-red
+                    button
+                      i.icon.icon-share
+                      span.text-red  Поделиться
+                    ul.news__social
+                      li
+                        i.icon.icon-twitter
+                      li
+                        i.icon.icon-fb
+                      li
+                        i.icon.icon-vk
+    .text-center
+      button.btn.btn-primary ВСЕ НОВОСТИ
