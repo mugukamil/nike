@@ -31,7 +31,7 @@ $red: #c06
 $hover: #999
 
 
-@each $icons in call, cart, clock, fb, heart, like, mail, message, search, share, star, twitter, vk
+@each $icons in call, cart, clock, fb, vk-small, heart, like, mail, message, search, share, share-grey, star, twitter, vk
     i.icon-#{$icons}
         +s(icon-#{$icons})
         display: inline-block
@@ -39,6 +39,14 @@ $hover: #999
 
 =gap
     margin-right: 1%
+    
+.clr
+    +clr
+
+.fr
+    float: right
+.fl
+    float: left
 
 .text-red
     color: $red
@@ -59,7 +67,7 @@ body
     font-family: "Noto Sans"
     font-size: 16px
     font-weight: 400
-    min-width: 1280px
+    min-width: 1200px
 
 .container
     max-width: 1270px
@@ -192,7 +200,6 @@ a
         i
             +s(icon-cart) 
             display: inline-block
-    &__middle
     &__menu
         background-color: black
         min-height: 55px
@@ -372,7 +379,6 @@ a
         margin-bottom: 20px
     & + .card
         margin-left: 0.7%
-    &__desc
     &__text
         font-weight: 400
         line-height: 16px
@@ -406,6 +412,10 @@ a
     margin: 0 auto 30px auto
     background-color: #fff 
     padding: 30px 20px
+    .right-col &
+        width: auto
+        border: 1px solid #ccc
+        padding-bottom: 20px
     &__product
         font-size: 14px
         font-weight: 400
@@ -707,3 +717,86 @@ a
         height: 1px
         background-color: #c6c6c6
         margin: 30px 0
+    
+.sorting
+    +clr
+    margin-bottom: 30px
+    p
+        display: inline-block
+        vertical-align: top
+        color: #333
+        font-size: 12px
+        font-weight: 400
+        margin-right: 10px
+    &__list
+        display: inline-block
+        vertical-align: top
+        li
+            display: inline-block
+        a
+            vertical-align: top
+            background-color: #e8f1fa
+            border-radius: 5px
+            padding: 2px 10px
+            color: #333
+            font-size: 12px
+            font-weight: 400
+            &:hover
+                color: $red
+    .btn
+        float: right
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        padding: 15px 23px
+        
+.pagination
+    button
+        background-color: $red
+        color: white
+        font-size: 12px
+        border: none
+        border-radius: 50%
+        padding: 2px 6px
+
+.blog
+    
+.article
+    header
+        margin-bottom: 30px
+        h1
+            margin-bottom: 0
+    &__img
+        max-width: 100%
+    &__contimgs
+        ul
+            margin-right: 20px
+        img
+            & + img
+                margin-left: 30px
+    &__footer
+        margin-top: 15px
+        text-align: left
+        padding-left: 20px
+        padding-right: 20px
+        li
+            display: inline-block
+        > li
+            color: #999
+            font-size: 13px
+            line-height: 16px
+            & + li
+                margin-left: 5%
+        button
+            background: none
+    &__social
+        display: inline-block
+        margin-right: 20px
+        li
+            display: inline-block
+            vertical-align: top
+            margin-left: 5px
+    &__share
+        span
+            font-size: 13px
+            margin-right: 20px

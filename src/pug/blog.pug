@@ -1,0 +1,12 @@
+extends _layout
+    
+block title
+    title Блог
+    
+block vars
+    -var page = 'page'
+
+block content
+    include _header
+    include blog/_content
+    include _footer
