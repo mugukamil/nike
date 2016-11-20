@@ -74,4 +74,23 @@
                             button
                                 i.icon.icon-heart
                                 span  721
-            hr.right-col__hr
+        hr.right-col__hr
+
+        h1.right-col__heading 
+            span.text-red рекомендованные 
+            | товары
+        include ../_goods
+        
+        hr.right-col__hr
+        
+        .blog__comments.comments
+            h1.right-col__heading.text-red комментарии
+            button.btn.btn-primary оставить отзыв
+            ul.comments__list
+                -for (var i = 0; i < 3; i++)
+                    li.comments__item
+                        h2.comments__heading Мария иВанова / 01.10.2016
+                        p
+                            | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            button.btn.btn-primary все статьи
+                        

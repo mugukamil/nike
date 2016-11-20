@@ -372,6 +372,7 @@ a
     vertical-align: top
     background-color: white
     padding: 20px 5px
+    text-align: center
     &--blue
         background-color: #e8f1fa 
     img
@@ -385,6 +386,9 @@ a
         color: #333
         font-size: 12px
         margin-bottom: 10px
+        width: 60%
+        margin-left: auto
+        margin-right: auto
     &__price
         font-size: 14px
         line-height: 16px
@@ -395,11 +399,13 @@ a
         font-size: 14px
         font-weight: 400
         line-height: 18px
-        padding: 12px 15%
+        padding: 12px 9%
         margin-top: 10px
 
 .col6
     text-align: center
+    .right-col &
+        text-align: left
 
 .bestsellers
     &__list
@@ -665,6 +671,8 @@ a
             font-size: 14px
             line-height: 18px
             color: #333
+            &:hover
+                color: $red
     &__catalog
         display: inline-block
         & + ul
@@ -705,6 +713,7 @@ a
         font-weight: 400
         line-height: 16px
         margin-bottom: 30px
+        text-transform: uppercase
     &__text
         color: #333
         font-size: 12px
@@ -760,6 +769,12 @@ a
         padding: 2px 6px
 
 .blog
+    &__comments
+        .btn
+            padding: 12px 20px
+            font-size: 14px
+            line-height: 18px
+            margin-bottom: 30px
     
 .article
     header
@@ -768,6 +783,7 @@ a
             margin-bottom: 0
     &__img
         max-width: 100%
+        margin-bottom: 40px
     &__contimgs
         ul
             margin-right: 20px
@@ -800,3 +816,18 @@ a
         span
             font-size: 13px
             margin-right: 20px
+            
+.comments
+    &__list
+        margin-bottom: 25px
+    &__heading
+        color: #333
+        line-height: 16px
+        font-size: 14px
+        text-transform: uppercase
+        margin-bottom: 15px
+    &__item
+        & + li
+            margin-top: 20px
+    p
+        font-size: 12px
