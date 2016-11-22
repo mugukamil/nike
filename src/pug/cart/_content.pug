@@ -1,0 +1,98 @@
+.container-wide
+    section.section.cart.right-col
+        .row
+            .cart__info
+                h1.right-col__heading Ваша 
+                    span.text-red  корзина (1 Товар)
+                +box-img(class='cart__img')
+                .table-wrap
+                    table.cart__table
+                        tr
+                            td Модель: 
+                            td Nike Air Max 90 Black Leather 
+                        tr
+                            td Размер: 
+                            td Размер: 42 (+44 примерка)
+                        tr
+                            td Колличество: 
+                            td 1 штука
+                        tr
+                            td Цена:
+                            td 3.190 руб.
+                        tr
+                            td Доставка:
+                            td Курьерская доставка по Москве 300 руб.
+                p.cart__total
+                    span.text-red Итого: 
+                    | 5.000 руб.
+
+                .cart__details
+                    h1.right-col__heading подробности 
+                        span.text-red заказа №1023
+                    table.cart__table.cart__table--details
+                        tr 
+                            td Дата заказа:
+                            td Lorem ipsum.
+                        tr 
+                            td Имя:
+                            td Lorem ipsum.
+                        tr 
+                            td E-mail:
+                            td Lorem ipsum.
+                        tr 
+                            td Телефон:
+                            td Lorem ipsum.
+                        tr 
+                            td Адрес доставки:
+                            td Lorem ipsum.
+                        tr 
+                            td Комментарий:
+                            td Lorem ipsum.
+                        tr 
+                            td Способ доставки:
+                            td Lorem ipsum.
+
+            .cart__payment
+                h1.right-col__heading выберите 
+                    span.text-red способ оплаты
+                form.cart__form
+                    div
+                        label.text-red 
+                            input(type="radio", name="payment")
+                            | Оплатить онлайн UnitPay, к оплате 3 490 руб
+
+                        ul
+                            p Варианты оплаты без комиссии:
+                            li 
+                                img(src="img/webmoney.jpg")
+                            li 
+                                img(src="img/qiwiwallet.jpg")
+                            li 
+                                img(src="img/yandexmoney.jpg")
+                            li 
+                                img(src="img/mastercard.jpg")
+                            li 
+                                img(src="img/visa.jpg")
+                            li 
+                                img(src="img/maestro.jpg")
+                            li 
+                                img(src="img/alfabank.jpg")
+                            li 
+                                img(src="img/liqpay.png")
+
+                    p Кроме этого возможна оплата без комиссии через любое отделение Связного и Евросети В этом случае вы получаете номер счёта, который сможете оплатить в кассе любого отделения.
+
+                    p Для тех кому не подходят вышеперечисленные варианты оплаты. Для вас доступна оплата напрямую с баланса телефона. В это случае взымается небольшая комиссия 7-10%. Мобильные операторы:
+                    div
+                        label.text-red 
+                            input(type="radio", name="payment")
+                            | Оплата наличными при получении, к оплате 3 490 руб
+
+                        p Всегда даём сдачу;)
+                    div
+                        label.text-red 
+                            input(type="radio", name="payment")
+                            | Оплатить онлайн, к оплате 3 490 руб
+
+                            p Для дальнейших инструкций онлайн оплаты с вами свяжется наш менеджер в ближайщее время!
+                    button.btn.btn-primary ЗАКОНЧИТЬ ЗАКАЗ

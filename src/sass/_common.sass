@@ -43,6 +43,9 @@ $hover: #999
 .clr
     +clr
 
+.table-wrap
+    display: inline-block
+
 .fr
     float: right
 .fl
@@ -67,7 +70,6 @@ body
     font-family: "Noto Sans"
     font-size: 16px
     font-weight: 400
-    min-width: 1200px
 
 .container
     max-width: 1270px
@@ -576,6 +578,7 @@ a
         padding-right: 20px
         li
             display: inline-block
+            vertical-align: top
             color: #999
             font-size: 13px
             line-height: 16px
@@ -726,8 +729,23 @@ a
         height: 1px
         background-color: #c6c6c6
         margin: 30px 0
+    &__advantages
+        margin-top: 30px
+        ul
+            text-align: left
+        li
+            text-align: center
+            & + li
+                margin-left: 2%
+
     
 .sorting
+    &--left
+        display: inline-block
+        vertical-align: top
+    &--right
+        display: inline-block
+        vertical-align: top
     +clr
     margin-bottom: 30px
     p
@@ -797,6 +815,7 @@ a
         padding-right: 20px
         li
             display: inline-block
+            vertical-align: top
         > li
             color: #999
             font-size: 13px
@@ -808,6 +827,7 @@ a
     &__social
         display: inline-block
         margin-right: 20px
+        vertical-align: top
         li
             display: inline-block
             vertical-align: top
@@ -831,3 +851,94 @@ a
             margin-top: 20px
     p
         font-size: 12px
+
+.box-img
+    width: 154px
+    height: 158px
+    border: 1px solid #edeaea
+    padding-top: 20px
+    display: inline-block
+    vertical-align: top
+    img 
+        max-width: 152px
+    p
+        color: #333
+        font-size: 12px
+        line-height: 16px
+        text-align: center 
+        margin-top: 15px
+
+.cart
+    &__info
+        width: 50%
+        vertical-align: top
+        display: inline-block
+    &__img
+        margin-right: 13px
+    &__table
+        display: inline-block
+        color: #333
+        font-size: 12px
+        line-height: 24px
+        margin-bottom: 25px
+        &--details
+            margin-left: 0
+            width: 360px
+        tr
+        td
+            +prevent-text
+            padding-right: 6px
+            padding-left: 20px
+            border: 1px solid #edeaea
+            &:first-child
+                padding-right: 15px
+                padding-top: 3px
+                padding-bottom: 3px
+                border-right: 1px solid #edeaea
+            &:last-child
+                width: 215px
+    &__total
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        color: #333
+        margin-bottom: 20px
+    &__payment
+        padding-left: 30px
+        width: 48% 
+        display: inline-block
+        vertical-align: top
+    &__form
+        label
+            margin-top: 30px
+            display: inline-block
+        input
+            margin-right: 7px
+        p
+            color: #333
+            font-size: 12px
+            margin-top: 20px
+            & + p
+
+        ul
+            margin-bottom: 15px
+            p
+                margin-bottom: 10px
+        li
+            display: inline-block
+            & + li
+                margin-left: 3px
+        .btn
+            margin-top: 20px
+            padding: 15px 7px
+            font-size: 14px
+            line-height: 18px
+
+.goods-list
+    ul
+    li
+        display: inline-block
+        vertical-align: top
+        margin-top: 10px
+        & + li
+            margin-left: 5px
