@@ -7,18 +7,18 @@
                     | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
             .right-col__advantages
-                h1.right-col__heading наши 
-                    span.text-red преимущества
+                h1.right-col__heading наши
+                    span.text-red  преимущества
                 include ../_advantages-list
 
     .goods-list
         ul
             -for (var i = 0; i < 8; i++)
-                li 
+                li
                     +box-img
         ul
             -for (var i = 0; i < 8; i++)
-                li 
+                li
                     +box-img
 
     hr.right-col__hr
@@ -42,3 +42,111 @@
                         a(href) По полезности
                     li
                         a(href) По оценке
+
+    .goods__filters
+        aside.goods__filter
+            .goods__filter-header
+                h1 фильтры
+            .goods__filter-items
+                h3 Размеры EUR:
+                ul
+                    -for (var i = 36; i <= 46; i++)
+                        li
+                            label.checkbox
+                                span.checkbox__text #{i}
+                                input(type='checkbox')
+                h3 сезон:
+                ul
+                    li
+                        label.checkbox
+                            span.checkbox__text Весна
+                            input(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Осень
+                            input(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Зима
+                            input(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Лето
+                            input(type='checkbox')
+                h3 направление:
+                ul.full-width
+                    li
+                        label.checkbox
+                            span.checkbox__text Повседневные
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Для бега
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Для фитнеса
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Для футбола
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Для баскетбола
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Для волейбола
+                            input.fr(type='checkbox')
+                h3 цвет:
+                ul.full-width
+                    li
+                        label.checkbox
+                            span.checkbox__text Светлые
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Тёмные
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Яркие
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Камуфляжные
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text С цветами
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Светящиеся
+                            input.fr(type='checkbox')
+                h3 метериал верха:
+                ul.full-width
+                    li
+                        label.checkbox
+                            span.checkbox__text Кожа
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Замша
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Сетка
+                            input.fr(type='checkbox')
+                    li
+                        label.checkbox
+                            span.checkbox__text Текстиль
+                            input.fr(type='checkbox')
+                h3 цена:
+                .goods__price.price
+                    .price__range
+                        input(value=0 name="price-from")
+                        input(name="price-to")
+                    .price__slider#js-range-price
+                button.btn.btn-primary Применить
