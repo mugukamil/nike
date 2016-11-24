@@ -44,109 +44,131 @@
                         a(href) По оценке
 
     .goods__filters
-        aside.goods__filter
-            .goods__filter-header
-                h1 фильтры
-            .goods__filter-items
-                h3 Размеры EUR:
-                ul
-                    -for (var i = 36; i <= 46; i++)
+        .container-wide
+            aside.goods__filter
+                .goods__filter-header
+                    h1 фильтры
+                .goods__filter-items
+                    h3 Размеры EUR:
+                    ul.goods__filter--sizes
+                        -for (var i = 36; i <= 46; i++)
+                            li
+                                label.checkbox
+                                    span.checkbox__text #{i}
+                                    input(type='checkbox')
+                                    span.checkbox__square
+                    h3 сезон:
+                    ul.goods__filter--seasons
                         li
                             label.checkbox
-                                span.checkbox__text #{i}
+                                span.checkbox__text Весна
                                 input(type='checkbox')
-                h3 сезон:
-                ul
-                    li
-                        label.checkbox
-                            span.checkbox__text Весна
-                            input(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Осень
-                            input(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Зима
-                            input(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Лето
-                            input(type='checkbox')
-                h3 направление:
-                ul.full-width
-                    li
-                        label.checkbox
-                            span.checkbox__text Повседневные
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Для бега
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Для фитнеса
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Для футбола
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Для баскетбола
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Для волейбола
-                            input.fr(type='checkbox')
-                h3 цвет:
-                ul.full-width
-                    li
-                        label.checkbox
-                            span.checkbox__text Светлые
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Тёмные
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Яркие
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Камуфляжные
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text С цветами
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Светящиеся
-                            input.fr(type='checkbox')
-                h3 метериал верха:
-                ul.full-width
-                    li
-                        label.checkbox
-                            span.checkbox__text Кожа
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Замша
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Сетка
-                            input.fr(type='checkbox')
-                    li
-                        label.checkbox
-                            span.checkbox__text Текстиль
-                            input.fr(type='checkbox')
-                h3 цена:
-                .goods__price.price
-                    .price__range
-                        input(value=0 name="price-from")
-                        input(name="price-to")
-                    .price__slider#js-range-price
-                button.btn.btn-primary Применить
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Осень
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Зима
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Лето
+                                input(type='checkbox')
+                                span.checkbox__square
+                    h3 направление:
+                    ul.goods__filter--full-width
+                        li
+                            label.checkbox
+                                span.checkbox__text Повседневные
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Для бега
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Для фитнеса
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Для футбола
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Для баскетбола
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Для волейбола
+                                input(type='checkbox')
+                                span.checkbox__square
+                    h3 цвет:
+                    ul.goods__filter--full-width
+                        li
+                            label.checkbox
+                                span.checkbox__text Светлые
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Тёмные
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Яркие
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Камуфляжные
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text С цветами
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Светящиеся
+                                input(type='checkbox')
+                                span.checkbox__square
+                    h3 метериал верха:
+                    ul.goods__filter--full-width
+                        li
+                            label.checkbox
+                                span.checkbox__text Кожа
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Замша
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Сетка
+                                input(type='checkbox')
+                                span.checkbox__square
+                        li
+                            label.checkbox
+                                span.checkbox__text Текстиль
+                                input(type='checkbox')
+                                span.checkbox__square
+                    h3 цена:
+                    .goods__price.price
+                        .price__range
+                            input.js-filter-from(value=0 name="price-from")
+                            input.js-filter-to(name="price-to")
+                        .price__slider#js-range-price
+                    button.btn.btn-primary Применить
