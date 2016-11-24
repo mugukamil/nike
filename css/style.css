@@ -159,9 +159,9 @@ i.icon-vk { background-image: url("../img/icons.png"); width: 27px; height: 27px
 .text-center { text-align: center; margin: 0 auto; }
 .text-center .btn { padding: 10px 15px; color: white; font-size: 14px; font-weight: 400; }
 
-body { font-family: "Noto Sans"; font-size: 16px; font-weight: 400; }
+body { font-family: "Noto Sans"; font-size: 16px; font-weight: 400; min-width: 1280px; }
 
-.container { max-width: 1270px; width: 100%; margin: 0 auto; }
+.container { max-width: 1280px; min-width: 1280px; width: 100%; margin: 0 auto; }
 .container-wide { max-width: 1400px; width: 100%; margin: 0 auto; position: relative; }
 .container-small { max-width: 1020px; width: 100%; margin: 0 auto; }
 
